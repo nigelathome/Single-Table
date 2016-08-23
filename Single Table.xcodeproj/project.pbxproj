@@ -14,6 +14,8 @@
 		91B0CF921D6AE17800D036CE /* Single_Table.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91B0CF901D6AE17800D036CE /* Single_Table.xcdatamodeld */; };
 		91B0CF941D6AE17800D036CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B0CF931D6AE17800D036CE /* Assets.xcassets */; };
 		91B0CF971D6AE17800D036CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B0CF951D6AE17800D036CE /* LaunchScreen.storyboard */; };
+		91BA310F1D6C63AB00FD4F18 /* Cells in Resources */ = {isa = PBXBuildFile; fileRef = 91BA310E1D6C63AB00FD4F18 /* Cells */; };
+		91BA31151D6C6AF100FD4F18 /* NameAndColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BA31141D6C6AF100FD4F18 /* NameAndColorCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		91B0CF931D6AE17800D036CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91B0CF961D6AE17800D036CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91B0CF981D6AE17800D036CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91BA310E1D6C63AB00FD4F18 /* Cells */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cells; sourceTree = "<group>"; };
+		91BA31131D6C6AF100FD4F18 /* NameAndColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NameAndColorCell.h; path = Cells/NameAndColorCell.h; sourceTree = "<group>"; };
+		91BA31141D6C6AF100FD4F18 /* NameAndColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NameAndColorCell.m; path = Cells/NameAndColorCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 		91B0CF831D6AE17800D036CE /* Single Table */ = {
 			isa = PBXGroup;
 			children = (
+				91BA310E1D6C63AB00FD4F18 /* Cells */,
 				91B0CF871D6AE17800D036CE /* AppDelegate.h */,
 				91B0CF881D6AE17800D036CE /* AppDelegate.m */,
 				91B0CF8A1D6AE17800D036CE /* ViewController.h */,
@@ -70,6 +76,8 @@
 				91B0CF981D6AE17800D036CE /* Info.plist */,
 				91B0CF901D6AE17800D036CE /* Single_Table.xcdatamodeld */,
 				91B0CF841D6AE17800D036CE /* Supporting Files */,
+				91BA31131D6C6AF100FD4F18 /* NameAndColorCell.h */,
+				91BA31141D6C6AF100FD4F18 /* NameAndColorCell.m */,
 			);
 			path = "Single Table";
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BA310F1D6C63AB00FD4F18 /* Cells in Resources */,
 				91B0CF971D6AE17800D036CE /* LaunchScreen.storyboard in Resources */,
 				91B0CF941D6AE17800D036CE /* Assets.xcassets in Resources */,
 				91B0CF8F1D6AE17800D036CE /* Main.storyboard in Resources */,
@@ -155,6 +164,7 @@
 				91B0CF8C1D6AE17800D036CE /* ViewController.m in Sources */,
 				91B0CF891D6AE17800D036CE /* AppDelegate.m in Sources */,
 				91B0CF921D6AE17800D036CE /* Single_Table.xcdatamodeld in Sources */,
+				91BA31151D6C6AF100FD4F18 /* NameAndColorCell.m in Sources */,
 				91B0CF861D6AE17800D036CE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +316,7 @@
 				91B0CF9D1D6AE17800D036CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
