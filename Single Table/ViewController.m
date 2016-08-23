@@ -61,12 +61,18 @@
         cell.detailTextLabel.text = @"Mr. Tolkien";
     }
     
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:20.f];
+    
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
 indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
     return indexPath.row;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50.f;
 }
 
 #pragma mark -delegate
@@ -90,7 +96,5 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
     [alert addAction:action];
     [self presentViewController:alert animated:YES completion:nil];
 }
-
-
 
 @end
