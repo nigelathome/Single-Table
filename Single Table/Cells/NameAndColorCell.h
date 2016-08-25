@@ -11,5 +11,5 @@
 @interface NameAndColorCell : UITableViewCell
 
 @property (copy, nonatomic) NSString *name;
-@property (copy, nonatomic) NSString *color;
+@property (copy, nonatomic) NSString *colour;
 @end
