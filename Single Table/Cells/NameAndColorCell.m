@@ -10,8 +10,8 @@
 
 @interface NameAndColorCell ()
 
-@property (strong, nonatomic) UILabel *nameLabel;
-@property (strong, nonatomic) UILabel *colourLabel;
+@property (strong, nonatomic) IBOutlet UILabel  *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *colourLabel;
 
 @end
 

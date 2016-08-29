@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "NameAndColorCell.h"
+
+static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
 @interface ViewController ()
 @property (copy, nonatomic) NSArray *dwarves;
+@property (copy, nonatomic) NSArray *computers;
 @end
 
 @implementation ViewController
@@ -29,6 +33,19 @@
 //    UIEdgeInsets contentInset = tableView.contentInset;
 //    contentInset.top = 20;
 //    [tableView setContentInset:contentInset];
+    self.computers = @[@{@"Name":@"MacBook Air", @"Color":@"Silver"},
+                        @{@"Name":@"MacBook Pro", @"Color":@"Silver"},
+                        @{@"Name":@"iMac", @"Color":@"Silver"},
+                        @{@"Name":@"Mac Mini", @"Color":@"Silver"},
+                        @{@"Name":@"Mac Pro", @"Color":@"Black"}
+                        ];
+    UITableView *tableView = (id)[self.view viewWithTag:1];
+    [tableView registerClass:[NameAndColorCell class] forCellReuseIdentifier:CellTableIdentifier];
+    
+    UIEdgeInsets contentInset = tableView.contentInset;
+    contentInset.top = 20;
+    [tableView setContentInset:contentInset];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,7 +57,7 @@
 #pragma mark -dataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //    return [self.dwarves count];
-    return 0;
+    return [self.computers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,7 +82,12 @@
 //    cell.textLabel.font = [UIFont boldSystemFontOfSize:20.f];
 //    
 //    return cell;
-    return nil;
+    NameAndColorCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier forIndexPath:indexPath];
+    NSDictionary *rowData = self.computers[indexPath.row];
+    cell.name = rowData[@"Name"];
+    cell.colour = rowData[@"Colour"];
+    
+    return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView

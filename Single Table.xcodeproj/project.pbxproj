@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91AFC8B81D7420C00009E2E3 /* NameAndColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AFC8B71D7420C00009E2E3 /* NameAndColorCell.xib */; };
 		91B0CF861D6AE17800D036CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B0CF851D6AE17800D036CE /* main.m */; };
 		91B0CF891D6AE17800D036CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B0CF881D6AE17800D036CE /* AppDelegate.m */; };
 		91B0CF8C1D6AE17800D036CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B0CF8B1D6AE17800D036CE /* ViewController.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91AFC8B71D7420C00009E2E3 /* NameAndColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NameAndColorCell.xib; path = Cells/NameAndColorCell.xib; sourceTree = "<group>"; };
 		91B0CF811D6AE17800D036CE /* Single Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Single Table.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B0CF851D6AE17800D036CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91B0CF871D6AE17800D036CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				91B0CF841D6AE17800D036CE /* Supporting Files */,
 				91BA31131D6C6AF100FD4F18 /* NameAndColorCell.h */,
 				91BA31141D6C6AF100FD4F18 /* NameAndColorCell.m */,
+				91AFC8B71D7420C00009E2E3 /* NameAndColorCell.xib */,
 			);
 			path = "Single Table";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				91BA310F1D6C63AB00FD4F18 /* Cells in Resources */,
 				91B0CF971D6AE17800D036CE /* LaunchScreen.storyboard in Resources */,
+				91AFC8B81D7420C00009E2E3 /* NameAndColorCell.xib in Resources */,
 				91B0CF941D6AE17800D036CE /* Assets.xcassets in Resources */,
 				91B0CF8F1D6AE17800D036CE /* Main.storyboard in Resources */,
 			);
