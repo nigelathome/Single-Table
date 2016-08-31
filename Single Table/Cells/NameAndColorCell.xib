@@ -52,6 +52,10 @@
                     <constraint firstAttribute="trailingMargin" secondItem="e0z-D3-URN" secondAttribute="trailing" constant="10" id="rDe-4m-Xoh"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="colourLabel" destination="Yqi-46-hWL" id="P4s-DL-ymj"/>
+                <outlet property="nameLabel" destination="e0z-D3-URN" id="GfT-KW-GLw"/>
+            </connections>
             <point key="canvasLocation" x="232.5" y="-3437.5"/>
         </tableViewCell>
     </objects>
