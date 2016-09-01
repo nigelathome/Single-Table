@@ -35,11 +35,9 @@ static NSString *cellTableIdentifier = @"CellTableIdentifier";
     
     [tableView registerNib:nib forCellReuseIdentifier:cellTableIdentifier];
 
-    
     UIEdgeInsets contentInset = tableView.contentInset;
     contentInset.top = 20;
     [tableView setContentInset:contentInset];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,10 +55,8 @@ static NSString *cellTableIdentifier = @"CellTableIdentifier";
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NameAndColorCell *cell = [tableView dequeueReusableCellWithIdentifier:cellTableIdentifier
-                                                                forIndexPath:indexPath];
-    
+                                                             forIndexPath:indexPath];
     NSDictionary *rowData = self.computers[indexPath.row];
-    
     cell.name = rowData[@"Name"];
     cell.colour = rowData[@"Color"];
     
